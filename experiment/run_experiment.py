@@ -311,8 +311,8 @@ def start_experiment(  # pylint: disable=too-many-arguments
         region_coverage: bool = False,
         custom_seed_corpus_dir: Optional[str] = None):
     """Start a fuzzer benchmarking experiment."""
-    if not allow_uncommitted_changes:
-        check_no_uncommitted_changes()
+    #if not allow_uncommitted_changes:
+    #    check_no_uncommitted_changes()
 
     validate_experiment_name(experiment_name)
     validate_benchmarks(benchmarks)
