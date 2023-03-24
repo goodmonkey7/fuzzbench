@@ -29,7 +29,8 @@ logger = logs.Logger()  # pylint: disable=invalid-name
 
 def make(targets):
     """Invoke |make| with |targets| and return the result."""
-    command = ['make', '-j'] + targets
+    #command = ['make', '-j'] + targets
+    command = ['ls']
     return new_process.execute(command, cwd=utils.ROOT_DIR)
 
 
