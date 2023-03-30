@@ -1,5 +1,5 @@
 # The number of trials of a fuzzer-benchmark pair.
-trials: 5
+trials: 4
 
 # The amount of time in seconds that each trial is run for.
 # 1 day = 24 * 60 * 60 = 86400
@@ -21,3 +21,4 @@ report_filestore: /tmp/report-data
 # Flag that indicates this is a local experiment.
 local_experiment: true
 
+snapshot_period: 600
