@@ -87,7 +87,8 @@ def _clean_seed_corpus(seed_corpus_dir):
                 shutil.move(file_path, new_file_path)
             except OSError:
                 failed_to_move_files.append((file_path, new_file_path))
-
+        if not os.listdir(root)
+            os.rmdir(root)
     if failed_to_move_files:
         logs.error('Failed to move seed corpus files: %s', failed_to_move_files)
 
